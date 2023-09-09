@@ -1,4 +1,4 @@
-import { Navbar } from "./Navbar";
+import { HeaderNav } from "./HeaderNav";
 import { AppShell } from "@mantine/core";
 import React from "react";
 
@@ -9,11 +9,10 @@ const LayoutApp = ({ children }: LayoutProps) => {
   return (
     <AppShell
       header={
-        <Navbar
+        <HeaderNav
           links={[
             { label: "Home", link: "/" },
-            { label: "Upload", link: "/upload" },
-            { label: "Profile", link: "/profile" },
+            { label: "Create", link: "/upload" },
           ]}
         />
       }

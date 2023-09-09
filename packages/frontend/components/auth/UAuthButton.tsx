@@ -1,4 +1,5 @@
 import { Button } from "@mantine/core";
+import { IconPower } from "@tabler/icons-react";
 import { useState } from "react";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
@@ -9,7 +10,11 @@ function LoginButton() {
     await connect({ connector: connectors[0] });
   };
 
-  return <Button onClick={onClick}>Login</Button>;
+  return (
+    <Button radius="xl" onClick={onClick}>
+      Login
+    </Button>
+  );
 }
 
 function LogoutButton() {
@@ -19,7 +24,11 @@ function LogoutButton() {
     await disconnect();
   };
 
-  return <Button onClick={onClick}>Logout</Button>;
+  return (
+    <Button radius="xl" onClick={onClick}>
+      Logout
+    </Button>
+  );
 }
 export function UauthButton() {
   const { address } = useAccount();

@@ -51,7 +51,9 @@
       "**/hardhat-ts/**"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "@tabler/icons-react": "^2.34.0"
+  },
   "devDependencies": {
     "@synthetixio/synpress": "^3.1.0",
     "cypress-file-upload": "^5.0.8",

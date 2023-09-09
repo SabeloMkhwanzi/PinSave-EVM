@@ -40,7 +40,7 @@ export default function ConnectWallet() {
                   <Button
                     radius="xl"
                     variant="default"
-                    rightIcon={<IoWallet size={"28px"} color="red" />}
+                    rightIcon={<IoWallet size={"28px"} color="#B20000" />}
                     onClick={openConnectModal}
                   >
                     <Text
@@ -56,7 +56,7 @@ export default function ConnectWallet() {
 
               if (chain.unsupported) {
                 return (
-                  <Button color="red" radius="xl" onClick={openChainModal}>
+                  <Button color="#B20000" radius="xl" onClick={openChainModal}>
                     Wrong network
                   </Button>
                 );
@@ -81,7 +81,7 @@ export default function ConnectWallet() {
                     radius="xl"
                     variant="default"
                     onClick={openAccountModal}
-                    rightIcon={<IoWallet size={"28px"} color="red" />}
+                    rightIcon={<IoWallet size={"28px"} color="#B20000" />}
                   >
                     <Text
                       style={{ letterSpacing: "0.3px" }}
